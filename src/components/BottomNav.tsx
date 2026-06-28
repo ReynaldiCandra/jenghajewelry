@@ -79,7 +79,7 @@ export default function BottomNav() {
 
       {/* WA Button floating above nav */}
       <div className="fixed bottom-24 right-4 z-50 md:hidden">
-        
+        <a
           href={`https://wa.me/${WA}?text=${encodeURIComponent("Halo Jeengha Jewelry, saya ingin konsultasi.")}`}
           target="_blank"
           rel="noopener noreferrer"
