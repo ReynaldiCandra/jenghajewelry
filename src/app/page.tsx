@@ -10,7 +10,6 @@ import Blog from "@/components/Blog";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
-import WAButton from "@/components/WAButton";
 import BottomNav from "@/components/BottomNav";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
     <main>
       <Navbar />
       <ScrollReveal />
-      <WAButton />
       <BottomNav />
       <Hero />
       <About />
