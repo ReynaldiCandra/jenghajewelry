@@ -50,24 +50,22 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
-          {/* Logo */}
           <button
             onClick={() => handleNav("#beranda")}
-            className="flex items-center gap-3 focus:outline-none group"
+            className="flex items-center focus:outline-none group"
             aria-label="Kembali ke beranda"
           >
-            <div className="relative w-32 h-12">
+            <div className="relative w-36 h-12">
               <Image
                 src="/logo.png"
                 alt="Jeengha Jewelry"
                 fill
-                className="object-contain"
+                className="object-contain object-left"
                 priority
               />
             </div>
           </button>
 
-          {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => {
               const id = link.href.replace("#", "");
@@ -90,7 +88,6 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             
               href="https://wa.me/6289767705361"
@@ -102,31 +99,17 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none"
             aria-label={menuOpen ? "Tutup menu" : "Buka menu"}
           >
-            <span
-              className={`block w-6 h-0.5 bg-brand-espresso transition-all duration-300 ${
-                menuOpen ? "rotate-45 translate-y-2" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-brand-espresso transition-all duration-300 ${
-                menuOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-brand-espresso transition-all duration-300 ${
-                menuOpen ? "-rotate-45 -translate-y-2" : ""
-              }`}
-            />
+            <span className={`block w-6 h-0.5 bg-brand-espresso transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+            <span className={`block w-6 h-0.5 bg-brand-espresso transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+            <span className={`block w-6 h-0.5 bg-brand-espresso transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden bg-brand-cream/98 border-t border-brand-gold/20 px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
