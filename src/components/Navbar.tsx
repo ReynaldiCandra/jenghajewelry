@@ -57,7 +57,7 @@ export default function Navbar() {
             className="flex items-center gap-3 focus:outline-none group"
             aria-label="Kembali ke beranda"
           >
-            <div className="relative w-10 h-10">
+            <div className="relative w-32 h-12">
               <Image
                 src="/logo.png"
                 alt="Jeengha Jewelry"
@@ -66,15 +66,6 @@ export default function Navbar() {
                 priority
               />
             </div>
-            <div className="hidden sm:block">
-              <span className="font-serif text-lg font-semibold text-brand-espresso tracking-wide">
-                Jeengha
-              </span>
-              <span className="block text-[9px] tracking-[0.25em] text-brand-gold font-sans font-medium uppercase">
-                Jewelry
-              </span>
-            </div>
-          </button>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
