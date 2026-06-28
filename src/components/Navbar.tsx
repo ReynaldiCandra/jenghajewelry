@@ -20,7 +20,6 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 40);
-
       const sections = navLinks.map((l) => l.href.replace("#", ""));
       for (const id of [...sections].reverse()) {
         const el = document.getElementById(id);
@@ -66,6 +65,7 @@ export default function Navbar() {
                 priority
               />
             </div>
+          </button>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
@@ -92,7 +92,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a
+            
               href="https://wa.me/6289767705361"
               target="_blank"
               rel="noopener noreferrer"
@@ -138,7 +138,7 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
-            <a
+            
               href="https://wa.me/6289767705361"
               target="_blank"
               rel="noopener noreferrer"
