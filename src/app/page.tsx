@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Values from "@/components/Values";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
+import Products from "@/components/Products";
 import Testimonials from "@/components/Testimonials";
 import Blog from "@/components/Blog";
 import CTA from "@/components/CTA";
@@ -21,6 +22,7 @@ export default function Home() {
       <About />
       <Values />
       <Services />
+      <Products />
       <Gallery />
       <Testimonials />
       <Blog />
