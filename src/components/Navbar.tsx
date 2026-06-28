@@ -89,7 +89,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            
+            <a
               href="https://wa.me/6289767705361"
               target="_blank"
               rel="noopener noreferrer"
@@ -121,7 +121,7 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
-            
+            <a
               href="https://wa.me/6289767705361"
               target="_blank"
               rel="noopener noreferrer"
